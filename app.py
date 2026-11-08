@@ -47,7 +47,7 @@ model_files = {
     "Support Vector Machine (SVM)": "svm.pkl"
 }
 
-@st.experimental_singleton
+@st.cache_resource
 def load_models():
     loaded_models = {}
 
